@@ -1,0 +1,200 @@
+:root {
+    --alek: #000; /*fond de la carte, textes sombres, fond du pseudo */
+    --clyde: #805F41; /*fond des bordures, textes clairs */
+    --elexa: #E4BA0C; /*contour de l'icone de la carte, réponse aux infos, fond des onglets, titres du contenu des onglets, italique de la page3 */
+    --fufu: #E773B4; /*fond du contenu des onglets*/
+    --milou: #F18628; /*fond des informations age, sexe, etc de la carte */
+    }
+    
+    body{
+      width: 99%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    *{
+      box-sizing: border-box;
+    }
+    
+    /*****SCROLLBAR*****/
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #D8D8D8; 
+    }
+    
+    
+    .nom{
+      width: 400px; 
+      text-align: center;
+      position: absolute;
+      top: 15px;
+      letter-spacing: 3px;
+      z-index: 99;
+      color: white; 
+      text-transform: uppercase; 
+      font-family: 'Bebas Neue', cursive;
+      font-size: 30px;
+      line-height: 52px;
+    }
+    
+    .staff{
+      display: grid;
+      margin: auto; 
+      width: 400px;
+      grid-column: 2;
+      grid-template-rows: 130px minmax(150px, auto);
+      margin-bottom: 50px;
+      transition: 0.3s;
+    }
+    
+    .staff:hover{
+      box-shadow: 0px 0px 13px #D8D8D8;
+      transition: 0.3s;
+    }
+      .background{
+      grid-column: 1;
+      grid-row: 1;
+      background: grey;
+      position: relative; 
+    }
+    
+    .background > img{
+      height: 100%; 
+      width: 100%; 
+      object-fit: cover;
+      object-position: 0px -50px;
+    }
+    
+    .background > .gradient{
+      position: absolute;
+      top: 0; 
+      left: 0; 
+      height: 100%;
+      width: 100%;
+    }
+    
+    .infos{
+      width: 135px;
+      height: 45px;
+      overflow: hidden;
+      margin-left: 10px;
+      display: flex; 
+      flex-wrap: wrap; 
+    }
+    .infos span{
+      display: block;
+      margin: auto 2px;
+      padding: 2px 5px 2px 5px; 
+      background: red; 
+      color: white; 
+      font-family: calibri; 
+      font-size: 11px;
+      text-transform: uppercase;
+      border-radius: 3px;
+    }
+    
+    .liens{
+      width: 120px; 
+      position: absolute; 
+      right: 0px; 
+      top: 150px;
+    }
+    .liens a{
+      font-size: 24px; 
+      margin-right: 13px;
+      color: red; 
+      font-family: 'Bebas Neue';
+      text-decoration: none;
+    }
+    
+    #membre1{
+       background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)); 
+    }
+    #alek_1  a{
+      color: var(--alek);
+    }
+    #alek2 > span{
+      background: var(--alek);
+    }
+    
+    #membre2{
+       background-image: linear-gradient(to bottom, rgba(128,95,65,0), rgba(128,95,65,1));
+    }
+    #clyde1 a{
+      color: var(--clyde);
+    }
+    #clyde2 > span{
+      background: var(--clyde);
+    }
+    
+    #membre3{
+       background-image: linear-gradient(to bottom, rgba(228,186,12,0), rgba(228,186,12,1));
+    }
+    #elexa1 a{
+      color: var(--elexa); 
+    }
+    #elexa2 > span{
+      background: var(--elexa);
+    }
+    
+    #membre4{
+       background-image: linear-gradient(to bottom, rgba(231,115,180,0), rgba(231,115,180,1));
+    }
+    #fufu1 a{
+      color: var(--fufu); 
+    }
+    #fufu2 > span{
+      background:var(--fufu);
+    }
+    
+    #membre5{
+       background-image: linear-gradient(to bottom, rgba(241,134,40,0), rgba(241,134,40,1));
+    }
+    #milou1  a{
+      color: var(--milou); 
+    }
+    #milou2 > span{
+      background: var(--milou);
+    }
+    
+    #membre6{
+       background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1));
+       color: #;
+    }
+    
+    .photo{
+      height: 130px;
+      width: 130px;
+      border-radius: 100px;
+      border: #F4F4F4 10px solid;
+      overflow: hidden; 
+      position: absolute;
+      top: 60px;
+      left: 135px;
+    }
+    
+    .photo > img{
+      height: 102%; 
+      width: 102%; 
+      object-fit: cover;
+    }
+    
+    .pres{
+      grid-column: 1;
+      grid-row: 2;
+      background: #F4F4F4;
+      color: black; 
+      font-size: 12px; 
+      font-family: calibri;
+      text-align: justify; 
+      padding: 60px 20px 20px 20px;
+    }
+    
+    .pres p{
+      max-height: 100px;
+      padding-right: 5px;
+      mardin: 0;
+      overflow: auto;
+    }

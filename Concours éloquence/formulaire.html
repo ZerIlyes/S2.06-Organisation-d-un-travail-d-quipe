@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Concour d'éloquence 17 Juin 2022</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="formulaire.css">
+    
+  </head>
+
+  <body>
+	  <header>
+	<nav>
+		<ul>
+			<li><a href="Profile1.html" class="nav">Profiles</a></li>
+          <li><a href="SAE.html" class="nav">Accueil</a></li>
+          <li><a href="programme.html" class="nav">Journée 14 Avril</a></li>
+          <li><a href="formulaire.html" class="nav">Formulaire Inscription</a></li>
+        </ul>	
+	</nav>
+	
+	<div id="image">
+		<h1>Concours d'éloquence 17 Juin 2022</h1>
+	</div>
+	</header>
+	
+	
+	<section>
+		<div class="form">
+		<h1>Confirmez votre présence </h1>
+		<p>Formulaire de présence au concours </p>
+		<form action="/page-traitement-donnees" method="post">
+	<div>
+		<label for="nom">Votre nom</label>
+		<input type="text" id="nom" name="nom" placeholder="Clément" required>
+	</div>
+	<div>
+		<label for="prénom">Votre prénom</label>
+		<input type="text" id="prénom" name="prénom" placeholder="Matin" required>
+	</div>
+	<div>
+		<label for="email">Votre e-mail</label>
+		<input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+	</div>
+	<div>
+		<label for="sujet">D'ou venez vous ?</label>
+		<select name="sujet" id="sujet" required>
+		<option value="" disabled selected hidden>Choisissez la ville</option>
+		<option value="Singapour">Singapour</option>
+		<option value="Sydney">Sydney</option>
+		<option value="Shangaï">Shangaï</option>
+		<option value="autre">Autre...</option>
+		</select>
+	</div>
+	<div>
+		<label for="sujet">Quelle langue parlez vous ?</label>
+		<select name="sujet" id="sujet" required>
+		<option value="" disabled selected hidden>Choisissez la langue</option>
+		<option value="Français">Français</option>
+		<option value="Anglais">Anglais</option>
+	<div>
+		<label for="message">A combien venez vous ?</label>
+		<textarea id="nombre" name="nombre" placeholder="Saisissez un nombre...." required></textarea>
+	</div>
+	<div>
+		<button type="submit">Valider mon inscription</button>
+	</div>
+		</form>
+	</div>
+
+	</section>
+
+	<footer>
+			<div id="icons">
+				<a href="https://www.instagram.com/concours_eloquence/"><i class="fa fa-instagram"></i></a>
+				<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+			</div>
+	<a href="formulaire-en.html"><img width="50px" src="drapeaux.png" alt="drapeaux Anglais"></a>
+	</footer>
+  </body>
+</html>
+

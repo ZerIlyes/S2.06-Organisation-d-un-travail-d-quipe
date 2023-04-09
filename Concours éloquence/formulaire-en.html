@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Concour d'éloquence 17 Juin 2022</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="formulaire.css">
+    
+  </head>
+
+  <body>
+	  <header>
+	<nav>
+		<ul>
+			<li><a href="profile.html" class="nav">Profiles</a></li>
+          <li><a href="SAE-en.html" class="nav">Accueil</a></li>
+          <li><a href="programme-en.html" class="nav">Journée 14 Avril</a></li>
+          <li><a href="formulaire-en.html" class="nav">Formulaire Inscription</a></li>
+        </ul>	
+	</nav>
+	
+	<div id="image">
+		<h1>Eloquence contest June 17, 2022</h1>
+	</div>
+	</header>
+	
+	
+	<section>
+		<div class="form">
+		<h1>Confirm you presence </h1>
+		<p>Competitive attendance form</p>
+		<form action="/page-traitement-donnees" method="post">
+	<div>
+		<label for="nom">Your name</label>
+		<input type="text" id="nom" name="nom" placeholder="Clément" required>
+	</div>
+	<div>
+		<label for="prénom">Your first name</label>
+		<input type="text" id="prénom" name="prénom" placeholder="Matin" required>
+	</div>
+	<div>
+		<label for="email">your e-mail</label>
+		<input type="email" id="email" name="email" placeholder="myadresse@email.com" required>
+	</div>
+	<div>
+		<label for="sujet">Where are you from ?</label>
+		<select name="sujet" id="sujet" required>
+		<option value="" disabled selected hidden>Choose the city</option>
+		<option value="Singapour">Singapour</option>
+		<option value="Sydney">Sydney</option>
+		<option value="Shangaï">Shangaï</option>
+		<option value="autre">Other...</option>
+		</select>
+	</div>
+	<div>
+		<label for="sujet">What language do you speak ?</label>
+		<select name="sujet" id="sujet" required>
+		<option value="" disabled selected hidden>Choose language</option>
+		<option value="Français">French</option>
+		<option value="Anglais">English</option>
+	<div>
+		<label for="message">How many are you coming from?</label>
+		<textarea id="nombre" name="nombre" placeholder="Enter a number...." required></textarea>
+	</div>
+	<div>
+		<button type="submit">Validate my registration</button>
+	</div>
+		</form>
+	</div>
+
+	</section>
+
+	<footer>
+			<div id="icons">
+				<a href="https://www.instagram.com/concours_eloquence/"><i class="fa fa-instagram"></i></a>
+				<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+			</div>
+		<a href="formulaire.html"><img width="50px" src="drapeauxfr.jpg" alt="drapeaux Français"></a>
+	</footer>
+  </body>
+</html>
+
+
